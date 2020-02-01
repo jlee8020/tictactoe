@@ -1,0 +1,43 @@
+*, *:before, *:after{
+box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+}   
+section.board {
+    display: grid;
+    grid-template-rows: repeat(3, 10vmin);
+    grid-template-columns: repeat(3, 10vmin);
+    grid-gap: 0vmin; 
+    float: left;
+    margin: 5vmin;
+}
+div {
+    border: 3px solid black;
+    font-size: 8vmin;
+    text-align: center;
+    vertical-align: middle;
+}
+button {
+    font-size: 3vmin;
+    font-weight: bold;
+    padding: 1vm;
+    margin: 5vmin;
+    border: .3vm solid black;
+    color: solid black;
+    border-color: black;
+    outline-color: grey;
+    cursor: pointer;
+}
+header{
+background-color: grey;
+color: plum;
+font: bold, 5vm, Gill Sans;
+}
+
