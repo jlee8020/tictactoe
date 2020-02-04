@@ -14,12 +14,12 @@ let turn;
 let winner;
 let playerOne;
 let playerTwo;
-let played;
+let isWinner = false;
 
 
 /*----- cached element references -----*/
 let squares = document.querySelectorAll('div');
-let message = document.querySelector('h1');
+let message = document.querySelector('h2');
 
 /*----- event listeners -----*/
 document.getElementById('x').addEventListener('click',handleChoiceClick);
@@ -62,23 +62,37 @@ function markBoard(evt){
     board[idx]= -1;
     }
     turn *= -1;
+   
+    getWinner();
+    render(idx);
   };
-  
-// function HandleTurn(){
-// parsed1 = parseInt('X');
-// playerOne = 1;
-// parsed2 = parseInt('O');
-// playerTwo = -1 * 1;
-// };
 
-
-
-
-// function render() {
-//   board.forEach(function(mark, index) {
-//   squares[index].textContent = mark;
-//   });};
-
-// function handleTurn() {
+function getWinner (){
+if(board[0] + board[1] + board[2] === 3 ||
+   board[3] + board[4] + board[5] === 3 ||
+   board[6] + board[7] + board[8] === 3 ||
+   board[0] + board[3] + board[6] === 3 ||
+   board[1] + board[4] + board[7] === 3 ||
+   board[2] + board[5] + board[8] === 3 ||
+   board[0] + board[4] + board[8] === 3 ||
+   board[2] + board[4] + board[6] === 3){
     
-// };
+    message.textContent = `${playerOne} Hugs ${playerOne} Wins!`
+    return 'True'; 
+  }
+  if(board[0] + board[1] + board[2] === -3 ||
+    board[3] + board[4] + board[5] === -3 ||
+    board[6] + board[7] + board[8] === -3 ||
+    board[0] + board[3] + board[6] === -3 ||
+    board[1] + board[4] + board[7] === -3 ||
+    board[2] + board[5] + board[8] === -3 ||
+    board[0] + board[4] + board[8] === -3 ||
+    board[2] + board[4] + board[6] === -3){
+
+    message.innerHTML = `${playerTwo} Kisses ${playerTwo} Wins!`
+    return 'True';
+  };
+};
+function render(){
+
+};
