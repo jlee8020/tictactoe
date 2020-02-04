@@ -9,6 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    background-color: burlywood;
 }   
 section.board {
     display: grid;
@@ -23,6 +24,9 @@ div {
     font-size: 8vmin;
     text-align: center;
     vertical-align: middle;
+}
+div:hover {
+    background-color: cornflowerblue;
 }
 button {
     font-size: 3vmin;
