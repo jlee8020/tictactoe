@@ -31,7 +31,8 @@
 -
 
 ## Credits:
-- 
+- table wallpaper : https://fullyloaded.pizza/wp-content/uploads/2016/08/2brown-wood-texture-and-background-1170x780.jpg
+- stacked paper effect: https://css-tricks.com/snippets/css/stack-of-paper/ by Geoff Graham
 
 ## Pseudocode:
 - This program will have 2 players. 
