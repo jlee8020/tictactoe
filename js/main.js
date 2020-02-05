@@ -26,11 +26,12 @@ init();
 function init(){
   board = [null, null, null, null, null, null, null, null, null];
   turn = 1;
-  turnCount = 1;
+  turnCount = 0;
 }
 
 function handleChoiceClick(evt){
   playerOne = evt.target.textContent;
+  
   if( playerOne === 'X'){
          playerTwo = 'O'; }
     else { 
@@ -45,6 +46,7 @@ function handleChoiceClick(evt){
 init();
 
 function markBoard(evt){
+  console.log(turnCount);
   let idx = parseInt(evt.target.id.replace('sq',''));
   if (board[idx] !== null || winner) {
     return evt;
@@ -57,17 +59,17 @@ function markBoard(evt){
       board[idx]= -1;
     }
     turn *= -1;
-    getWinner();
     turnCount++;
+    getWinner();
     
-    if (turnCount === 10 && winner === false){
-      message.textContent = `This is a tie`}
     return winner;
   }
   
-
+  
   function getWinner (){
     
+    if (turnCount === 9 && !winner){
+      message.textContent = `This is a tie`}
     if(board[0] + board[1] + board[2] === 3 ||
       board[3] + board[4] + board[5] === 3 ||
       board[6] + board[7] + board[8] === 3 ||
