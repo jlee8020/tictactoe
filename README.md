@@ -34,6 +34,22 @@
 - 
 
 ## Pseudocode:
+- This program will have 2 players. 
+- Player 1 - User Input and Player 2 - User Input
+- Player 1 chooses between X or O
+- If player 1 chooses O, Player 2 will be assigned X
+- If player 1 chooses X, Player 2 will be assigned O
+- Initial message: Please choose between button 1 or button 2!
+- Initialize board
+- Show Message - Good luck!
+- Players will take turns playing
+- Player 1 Input First
+- Player 2 responds
+- Players will take turn marking the board.
+- There will be 9 Total turns.
+- First player to assign/pick 3 containers in a row diagonally, vertically or horizontally wins!
+- Game Over
+- Play again
 
 
 
