@@ -1,1 +1,60 @@
-# tictactoe
+# TicTacToe
+##
+## Objective:
+### - Create a browser-based game that allows allows two players to play.
+##
+##
+## To play the game:
+### Click [here] to play the game.
+##
+##
+## Motivation:
+### This is a game that you will see on most kid's menu paper/placemat. My daughters(3 girls) and I, usually play TicTacToe while waiting on our food at a restaurant. A simple TicTacToe game reminds me of happy family times! 
+
+## Prototype View:
+### Here is my initial drawing of the playing field:
+
+### Here is an initial wire-frame of how the playing field will be set up:
+
+### Here is what the playing field looks like, post styling:
+
+## Technology Implemented:
+- JavaScript
+- CSS
+- HTML
+- Git 
+- 
+-
+
+## Credits:
+- 
+
+## Pseudocode:
+
+
+
+# User Experience:
+## User Persona #1:
+### Danielle is a preteen who likes to draw and play puzzles. Danielle noticed that each time she and her family goes out to eat at a restaurant, TicTacToe is one of the games printed on the back of her little sister's kids menu. She wants to practice TicTacToe in preparation to their next dinner out and to earn the bragging rights of winning a classic TicTacToe game.
+
+
+## User Persona #2:
+### Paul is a millionaire who is a member of the World's most exclusive organization called Millionaire TicTacMoolah. He realizes that in order to be a member of the Millionaire TicTacMoolah he must maintain his millionaire status and that he must possess ridiculous problem solving ability. He wants to practice TicTacToe so he can take the TicTacMoolah Platinum Medal at the organization's Annual championship tournament.
+
+
+
+## Minimum Viable Product:
+- As a user, I should be able to pick my marker between X or O.
+- As a user, I should be able to click a button to generate my marker.
+- As a user, I should be able to place a mark on the board and take turns marking against my oponent.
+- As a user, I should be able to win the game if I mark 3 in row, whether horizontally, diagonally or diagonally.
+- As a user, I should be able to see if I win!
+
+
+## Stretch Goals:
+- Player is able to choose own marker between - X or O ** done.
+- Player is able to choose turn: between player one or player two regardless of what marker pick.
+- About game button for game instructions.
+- Add mobile responsiveness
+
+
