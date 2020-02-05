@@ -31,7 +31,7 @@
 -
 
 ## Credits:
-- table background: https://www.freepik.com/free-photo/wooden-table-background_3513521.htm
+- table background: https://imgur.com/gallery/Jcn6ZoK
 - stacked paper effect: https://css-tricks.com/snippets/css/stack-of-paper/ by Geoff Graham
 
 ## Pseudocode:
