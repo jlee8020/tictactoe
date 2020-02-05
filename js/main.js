@@ -14,7 +14,6 @@ let turn;
 let winner;
 let playerOne;
 let playerTwo;
-let isWinner = false;
 
 
 /*----- cached element references -----*/
@@ -32,21 +31,23 @@ init();
 function init(){
   board = [null, null, null, null, null, null, null, null, null];
   turn = 1;
-  winner = null;
-  // render();
 }
 
 function handleChoiceClick(evt){
   playerOne = evt.target.textContent;
   if( playerOne === 'X'){
-         playerTwo = 'O'; }
-      else { playerTwo = 'X'
+         
+         playerTwo = 'O'; 
+         }
+      else { 
+        playerTwo = 'X'
+      
       }
   if(playerOne !== 'replay'){
-  message.innerHTML = `${playerOne} Hugs ${playerOne} goes first!`
+  message.textContent = `${playerOne} Hugs ${playerOne} goes first!`
   }
   else{
-  message.innerHTML = `${playerTwo} Kisses ${playerTwo} goes second!`};
+  message.textContent = `${playerTwo} Kisses ${playerTwo} goes second!`};
 
 };
 
@@ -54,6 +55,9 @@ init();
  
 function markBoard(evt){
   let idx = parseInt(evt.target.id.replace('sq',''));
+  if (board[idx] !== null || winner) {
+    return evt;
+  }
   if (turn === 1) {
    evt.target.textContent = playerOne;
     board[idx]= 1;}
@@ -61,11 +65,12 @@ function markBoard(evt){
     evt.target.textContent= playerTwo;
     board[idx]= -1;
     }
+  
     turn *= -1;
-   
     getWinner();
-    render(idx);
-  };
+  }
+
+
 
 function getWinner (){
 if(board[0] + board[1] + board[2] === 3 ||
@@ -76,9 +81,9 @@ if(board[0] + board[1] + board[2] === 3 ||
    board[2] + board[5] + board[8] === 3 ||
    board[0] + board[4] + board[8] === 3 ||
    board[2] + board[4] + board[6] === 3){
-    
+    winner = true;
     message.textContent = `${playerOne} Hugs ${playerOne} Wins!`
-    return 'True'; 
+   
   }
   if(board[0] + board[1] + board[2] === -3 ||
     board[3] + board[4] + board[5] === -3 ||
@@ -88,11 +93,7 @@ if(board[0] + board[1] + board[2] === 3 ||
     board[2] + board[5] + board[8] === -3 ||
     board[0] + board[4] + board[8] === -3 ||
     board[2] + board[4] + board[6] === -3){
-
+    winner = true;
     message.innerHTML = `${playerTwo} Kisses ${playerTwo} Wins!`
-    return 'True';
   };
-};
-function render(){
-
 };
