@@ -37,12 +37,12 @@ function handleChoiceClick(evt){
     else { 
         playerTwo = 'X'}
   if(playerOne !== 'replay'){
-  message.textContent = `${playerOne} goes first!`
+  message.textContent = `${playerOne} 's Turn`
   }
   else{
-  message.textContent = `${playerTwo} goes second!`};
+  message.textContent = `${playerTwo} 's Turn`};
 };
-
+  
 init();
 
 function markBoard(evt){
@@ -53,23 +53,24 @@ function markBoard(evt){
   }
   if (turn === 1) {
     evt.target.textContent = playerOne;
+    message.textContent = `${playerOne} 's Turn`;
     board[idx]= 1;}
     else{
       evt.target.textContent= playerTwo;
+      message.textContent = `${playerTwo} 's Turn`;
       board[idx]= -1;
     }
     turn *= -1;
     turnCount++;
     getWinner();
     
-    return winner;
   }
   
   
   function getWinner (){
     
     if (turnCount === 9 && !winner){
-      message.textContent = `This is a tie`}
+      message.textContent = `Darn... it's a tie`}
     if(board[0] + board[1] + board[2] === 3 ||
       board[3] + board[4] + board[5] === 3 ||
       board[6] + board[7] + board[8] === 3 ||
@@ -79,7 +80,7 @@ function markBoard(evt){
       board[0] + board[4] + board[8] === 3 ||
       board[2] + board[4] + board[6] === 3){
         winner = true;
-        message.textContent = `${playerOne} Wins!`
+        message.textContent = `Whoohoo ${playerOne} Wins!`
         
       }
       if(board[0] + board[1] + board[2] === -3 ||
@@ -91,7 +92,7 @@ function markBoard(evt){
         board[0] + board[4] + board[8] === -3 ||
         board[2] + board[4] + board[6] === -3){
           winner = true;
-          message.innerHTML = `${playerTwo} Wins!`
+          message.innerHTML = ` Whoohoo ${playerTwo} Wins!`
         };  
       };
       
