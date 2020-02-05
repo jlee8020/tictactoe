@@ -56,15 +56,15 @@
       margin: 5vmin;
       margin-left: 2vm;
       vertical-align: center;
-      text-align: right;
-      font-size: 2vmin;
+      text-align: left;
+      font-size: 3vmin;
     }
     .message{
       margin: 5vmin;
       margin-left: 2vm;
       vertical-align: center;
       text-align: center;
-      font-size: 4vmin;
+      font-size: 3vmin;
     }
     h3 {
       font-size: 1vmin;

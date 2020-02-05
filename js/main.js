@@ -80,7 +80,7 @@ function markBoard(evt){
       board[0] + board[4] + board[8] === 3 ||
       board[2] + board[4] + board[6] === 3){
         winner = true;
-        message.textContent = `Whoohoo ${playerOne} Wins!`
+        message.textContent = `${playerOne} Wins!`
         
       }
       if(board[0] + board[1] + board[2] === -3 ||
@@ -92,7 +92,7 @@ function markBoard(evt){
         board[0] + board[4] + board[8] === -3 ||
         board[2] + board[4] + board[6] === -3){
           winner = true;
-          message.innerHTML = ` Whoohoo ${playerTwo} Wins!`
+          message.innerHTML = ` ${playerTwo} Wins!`
         };  
       };
       
