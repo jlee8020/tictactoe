@@ -31,7 +31,7 @@
 -
 
 ## Credits:
-- table wallpaper : https://fullyloaded.pizza/wp-content/uploads/2016/08/2brown-wood-texture-and-background-1170x780.jpg
+- table background: https://www.freepik.com/free-photo/wooden-table-background_3513521.htm
 - stacked paper effect: https://css-tricks.com/snippets/css/stack-of-paper/ by Geoff Graham
 
 ## Pseudocode:
