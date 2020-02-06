@@ -5,7 +5,7 @@
 ##
 ##
 ## To play the game:
-### Click [here] to play the game.
+### Click [here](https://jlee8020.github.io/tictactoe/) to play the game.
 ##
 ##
 ## Motivation:
