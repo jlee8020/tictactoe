@@ -10,10 +10,10 @@
 ##
 ## Motivation:
 ### This is a game that I usually see on the back of kid's menu at a restaurant. My daughters(3 girls) and I, usually play TicTacToe while waiting for our order, it gives us time to bond and spend quality time with each other. A simple TicTacToe game reminds me of happy family times! 
-
-## Developer Take Away:
-### This game is special because this is my very first Javascript and CSS programming built from scratch. Although I am familiar with programming concepts Javascript is super new to me. The game challenge was to build a TicTacToe game on the preset that player one is automatically assigned "X" and player two assigned to "O". I was able to give the user the ability to pick their marker in the beginning of the game. 
+## Developer Ahas:
+### This game is special because this is my very first Javascript and CSS programming built from scratch. The game challenge was to build a TicTacToe game on the preset that player one is automatically assigned "X" and player two assigned to "O". I was able to give the user the ability to pick their marker in the beginning of the game. 
 ### I learned 2 lessons developing this game: 1. Have a plan and believe in your vision (in this case) how the game should start. 2. Be persistent and ask better questions. Rather than ask "Why is this code not working" ask "How can I make this work?" In the end, whether you are aware of it or not, when you ask better questions your brain will find a way to make it happen.
+ whether you are aware of it or not, when you ask better questions your brain will find a way to make it happen.
 
 ## Prototype View:
 ### Here is my initial drawing of the playing field:
